@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="PNG/bakgrunnferdig.png">
+    <title>Portfolie</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+
+<body>
+    <div class="background-ice">
+        <nav id="desktop-nav">
+            <div class="logo">Jo Edelsteen Indergård</div>
+            <div>
+                <ul class="nav-links">
+                    <li><a href="#about">Om meg</a></li>
+                    <li><a href="#projects">Prosjekter</a></li>
+                </ul>
+            </div>
+        </nav>
+        <nav id="hamburger-nav">
+            <div class="logo">Jo Indergård</div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="menu-links">
+                <ul>
+                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                </ul>
+
+
+            </div>
+        </nav>
+        <div class="headline-container">
+            <h1>Portfolie</h1>
+        </div>
+    </div>
+
+    <section id="about">
+        <p class="section__text__p1">Hvem er jeg?</p>
+        <h1>Om meg</h1>
+        <div class="about-section">
+            <div class="slider-container">
+                <div class="slides">
+                    <div class="slide"><img src="PNG/meg2.jpeg" alt="bilde 1" class="profile-pic"></div>
+                    <div class="slide"><img src="PNG/Lerkendal1.jpeg" alt="bilde 2" class="profile-pic"></div>
+                    <div class="slide"><img src="PNG/ski.jpeg" alt="bilde 3" class="profile-pic"></div>
+                </div>
+            </div>
+        </div>
+        <div class="text-content">
+            <h2>Jo Edelsteen Indergård, 22 år fra Trondheim, Norge</h2>
+            <p>
+                Hei! Jeg er student på KEA og går på Mulitmediedesign. Mine erfaringer med media og design er ikke mye,
+                men jeg har gått på årsstudium hjemme i Norge på NTNU som het medievitenskap. Jeg er helt ny til
+                Adobe-pakken men jeg liker utfordringene dette studiet gir meg! Jeg synes det er meget spennende å lære
+                seg alle de
+                verktøy som trengs for å henge med i undervisningen. Jeg liker at de temaene vi gjennomgår er så
+                forskjellige, da det gir meg en grunnleggende viten om hva som skal til for å mestre temaet.
+            </p>
+
+            <div class="text-container">
+                <p> <br>
+                    Jeg er en henholdsvis rolig person som liker både å være sosial, men som også setter pris på det å
+                    være alene. Når jeg er ute med venner liker jeg godt å dra på fotballkamp, eller møtes på en bar for
+                    å hygge oss og snakke sammen. Liker også å spille fotball med de, men det jeg setter mest pris på er
+                    det å dra på hyttetur.
+                    Spesielt på vinteren når det er snø og vi kan både gå på fjelltur eller stå på slalom. Jeg har det
+                    veldig godt alene med en god film eller noe god musikk som spilles høyt.
+                </p>
+            </div>
+        </div>
+
+        <img src="PNG/arrow.png" alt="Pil ikon" class="arrow" onclick="location.href='./#projects'">
+    </section>
+
+    <section id="projects">
+        <div class="card-list">
+            <a href="web.html" class="card-item">
+                <img src="PNG/web.png" alt="web">
+                <span class="web">Web</span>
+                <h3>Grunnleggende ferdigheter innenfor HTML.</h3>
+
+            </a>
+            <a href="ui.html" class="card-item">
+                <img src="PNG/ui:ux.png" alt="ui/ux">
+                <span class="ui">UI/UX</span>
+                <h3>Research og metode.</h3>
+
+            </a>
+
+            <a href="animasjon.html" class="card-item">
+                <img src="PNG/animation.png" alt="animasjon">
+                <span class="animasjon">Animasjon</span>
+                <h3>Introduksjon til Adobe Illustrator, samt Javascript</h3>
+
+            </a>
+            <a href="innhold.html" class="card-item">
+                <img src="PNG/innhold.png" alt="innhold">
+                <span class="innhold">Innhold</span>
+                <h3>Premiere Pro, Virksomheddsite, GitHub</h3>
+
+            </a>
+        </div>
+        <img src="PNG/pilopp_1.png" alt="Pil ikon" class="arrow2" onclick="location.href='./#about'">
+    </section>
+
+    <footer>
+        <nav class="footernav">
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">Om meg</a></li>
+                    <li><a href="#projects">Prosjekter</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Jo Edelsteen Indergård</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
